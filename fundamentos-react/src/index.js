@@ -1,33 +1,14 @@
+/* eslint-disable no-undef */
+import App from './App'
 import React from 'react'
-import ReactDom from 'react-dom'
+import ReactDOM from 'react-dom'
 
 /**
- * Styles.
- */
-import './index.css'
-
-/**
- * Components.
- */
-import Primeiro from './components/basicos/Primeiro'
-import ComParrametro from './components/basicos/ComParametro'
-
-/**
- * Get the root element.
+ * Get element root.
  */
 const element = document.getElementById('root')
 
-/**
- * Render on screen.
- */
-ReactDom.render(
-  <div>
-    <Primeiro />
-    <ComParrametro
-      title="Situação do aluno"
-      student="William Koerich"
-      note={9.3}
-    />
-  </div>,
+ReactDOM.render(
+  <App />,
   element
 )
