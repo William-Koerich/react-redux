@@ -1,7 +1,15 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
+/**
+ * Styles.
+ */
 import './index.css'
+
+/**
+ * Components.
+ */
+import Primeiro from './components/basicos/Primeiro'
 
 /**
  * Get the root element.
@@ -9,16 +17,11 @@ import './index.css'
 const element = document.getElementById('root')
 
 /**
- * Create message to show on screen.
- */
-const message = <strong>Olá React!!</strong>
-
-/**
  * Render on screen.
  */
 ReactDom.render(
   <div>
-    {message}
+    <Primeiro />
   </div>,
   element
 )
