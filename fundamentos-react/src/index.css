@@ -1,4 +1,14 @@
 body {
-  background-color: #222;
   color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: Oswald;
+  background-color: #222;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 200;
 }
