@@ -9,6 +9,8 @@ import './App.css'
  * Components.
  */
 import Primeiro from './components/basicos/Primeiro'
+import ListaProdutos from './components/repeticao/ListaProdutos'
+import ListaAlunos from './components/repeticao/ListaAlunos'
 import ComParrametro from './components/basicos/ComParametro'
 import Aleatorio from './components/basicos/Aleatorio'
 import Card from './components/layout/Card'
@@ -20,6 +22,14 @@ const App = props => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card title="#06 - Desafio repetição" color="#6312B1">
+        <ListaProdutos />
+      </Card>
+
+      <Card title="#05 - Repetição" color="#6497b1 ">
+        <ListaAlunos />
+      </Card>
+
       <Card title="#04 - Componentes com filhos" color="#F00">
         <Familia lastName="Koerich">
           <FamiliaMembro name="Nelsi" lastName="da Silva" />
