@@ -16,12 +16,21 @@ import Aleatorio from './components/basicos/Aleatorio'
 import Card from './components/layout/Card'
 import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
+import ParOuImpar from './components/condicional/ParOuImpar'
+import UsuarioInfo from './components/condicional/UsuarioInfo'
 
 const App = props => (
   <div className="App">
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card title="#07 - Renderização Condicional" color="#7e942f">
+        <ParOuImpar number={20} />
+        <UsuarioInfo name={'Mateus'} />
+        <UsuarioInfo email={'M@teus.com.br'} />
+        <UsuarioInfo />
+      </Card>
+
       <Card title="#06 - Desafio repetição" color="#6312B1">
         <ListaProdutos />
       </Card>
