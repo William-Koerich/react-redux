@@ -5,6 +5,7 @@ const productList = props => {
   const content = produtos.map(produto => {
     return (
       <tr key={produto.id}>
+        <td>{produto.id}</td>
         <td>{produto.nome}</td>
         <td>{produto.preco}</td>
       </tr>
@@ -12,7 +13,14 @@ const productList = props => {
   })
 
   return (
-    <table>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
       <tbody>{content}</tbody>
     </table>
   )
